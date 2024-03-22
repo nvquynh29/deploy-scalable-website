@@ -5,7 +5,10 @@ weight : 1
 chapter : false
 pre : "<b>5.1 </b>"
 ---
-<!--- TODO: Gắn source code -->
+Please download the source code below and extract it to prepare for the next steps:
+
+{{%attachments title="Source code" style="green" pattern="simple-todo-app.zip"/%}}
+
 ## Create ECR Repository
 1. Access ECR:
     - Search keyword: `ecr`

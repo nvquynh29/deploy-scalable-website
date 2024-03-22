@@ -5,6 +5,10 @@ weight : 1
 chapter : false
 pre : "<b>5.1 </b>"
 ---
+Hãy tải về source code dưới đây và giải nén để chuẩn bị cho các bước tiếp theo:
+
+{{%attachments title="Source code" style="green" pattern="simple-todo-app.zip"/%}}
+
 ## Tạo ECR Repository
 1. Truy cập ECR:
     - Tìm kiếm với từ khoá: `ecr`
