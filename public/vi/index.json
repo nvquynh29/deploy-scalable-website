@@ -1,0 +1,218 @@
+[
+{
+	"uri": "//localhost:1313/vi/1-introduction/",
+	"title": "Giới thiệu",
+	"tags": [],
+	"description": "",
+	"content": "Trong bài lab này, chúng ta sẽ sử dụng những dịch vụ dưới đây của AWS\nVirtual Private Cloud (VPC) Amazon Virtual Private Cloud (Amazon VPC) là “Đám mây Riêng tư Ảo” là một mạng ảo tùy chỉnh nằm bên trong AWS Cloud và tách biệt với toàn bộ thế giới bên ngoài. Khái niệm này tương tự như việc thiết kế và triển khai một mạng độc lập riêng biệt hoạt động trong một trung tâm dữ liệu on-premise, loại hình vẫn còn rất phổ biến hiện nay tại nhiều nơi trên thế giới.\nBên trong VPC tùy chỉnh đó, bạn có toàn quyền kiểm kiểm soát môi trường mạng ảo của mình, nghĩa là vừa có khả năng khởi tạo và chạy các tài nguyên AWS, vừa có thể lựa chọn phạm vi địa chỉ IP, tạo các mạng con và cấu hình các bảng định tuyến và cổng kết nối mạng. Bạn có thể sử dụng cả IPv4 và IPv6 để truy cập an toàn và dễ dàng vào tài nguyên và ứng dụng trong VPC.\nAmazon Relational Database Service (Amazon RDS) Amazon RDS là dịch vụ cơ sở dữ liệu quan hệ dễ dàng quản lý, được tối ưu hoá để tiết kiệm chi phí. RDS rất đơn giản để thiết lập, vận hành và mở rộng tuỳ theo nhu cầu. RDS tự động hoá các tác vụ quản lý phổ biến chẳng hạn như khởi tạo, cấu hình, sao lưu và vá lỗi. RDS cho phép khách hàng tạo cơ sở dữ liệu mới chỉ trong vài phút và cung cấp tính linh hoạt để tuỳ chỉnh cơ sở dữ liệu đáp ứng với nhu cầu sử dụng. Khách hàng có thể tối ưu hóa hiệu suất với các tính năng như Multi-AZ với hai bản sao dự phòng có thể đọc hoặc đọc và ghi được tối ưu hóa, đồng thời lựa chọn nhiều tùy chọn giá để quản lý chi phí hiệu quả.\nParameter Store Parameter Store là một chức năng của AWS Systems Manager, cung cấp khả năng lưu trữ phân cấp, an toàn để quản lý configuration data và secrets. Bạn có thể lưu trữ dữ liệu như mật khẩu, địa chỉ cơ sở dữ liệu\u0026hellip; dưới dạng văn bản thông thường hoặc dữ liệu được mã hóa. Bạn có thể tham chiếu các tham số này trong scripts, commands, hoặc cấu hình của dịch vụ khác bằng cách sử dụng Amazon Resource Name (ARN) của tham số.\nAmazon Elastic Container Registry (ECR) Amazon Elastic Container Registry (Amazon ECR) là dịch vụ lưu trữ container một cách bảo mật, có thể mở rộng và đáng tin cậy được quản lý bởi AWS. Amazon ECR hỗ trợ kho lưu trữ riêng tư với khả năng cấu hình quyển truy cập dựa trên tài nguyên bằng dịch vụ AWS IAM. Tính năng này cho phép bạn chỉ định những người dùng hoặc máy ảo EC2 nào có thể truy cập vào kho lưu trữ. ECR cho phép người dùng sử dụng CLI để quản lý, pull, push Docker images\nAmazon Elastic Container Service (ECS) Amazon Elastic Container Service (Amazon ECS) là dịch vụ điều phối container được quản lý hoàn toản bởi AWS. ECS giúp người dùng dễ dàng triển khai, quản lý và mở rộng quy mô của ứng dụng dưới dạng container. ECS là dịch vụ được quản lý hoàn toàn bởi AWS cho nên đã được tích hợp sẵn các best practices về cấu hình và vận hành ứng dụng. ECS có thể tích hợp với ECR và Docker một cách rất dễ dàng giúp cho việc triển khai ứng dụng trở nên thuận tiện hơn, người dùng chỉ cần tập trung vào việc phát triển ưng dụng còn phần triển khai đã được hỗ trợ bởi AWS.\nAmazon CloudWatch CloudWatch giám sát các tài nguyên và ứng dụng trên AWS bằng cách thu thập số liệu theo thời gian. Dịch vụ này cung cấp sẵn các dashboard cho các dịch vụ cốt lõi và cho phép người dùng tạo các dashboard để trực quan hoá các số liệu đã chọn. CloudWatch có thể tích hợp với rất nhiều dịch vụ khác một cách rất dễ dàng. Một trong những ứng dụng phổ biến nhất của CloudWatch đó là thu thập log của ứng dụng.\nElastic Load Balancing Elastic Load Balancing tự động phân phối lưu lượng truy cập đến nhiều mục tiêu khác nhau, chẳng hạn như máy ảo EC2, containers hoặc địa chỉ IP trong một hoặc nhiều vùng sẵn sàng. Nó giám sát tình trạng truy cập của các mục tiêu đã đăng ký và chỉ định tuyến lưu lượng truy cập đến các mục tiêu đang hoạt động. Nhờ vậy mà cân bằng tải có thể giúp hệ thống biết được khi nào cần mở rộng, giảm bớt lượng tài nguyên cần sử dụng dựa trên lưu lượng thực tế.\nAmazon Simple Storage Service (S3) Amazon Simple Storage Service (Amazon S3) là một dịch vụ lưu trữ dạng đối tượng cung cấp khả năng mở rộng, tính sẵn sàng, bảo mật và hiệu suất ở mức cao nhất. Khách hàng ở mọi quy mô và mọi ngành nghề đều có thể sử dụng S3 để lưu trữ và bảo vệ bất kỳ lượng dữ liệu nào cho nhiều trường hợp sử dụng, chẳng hạn như kho dữ liệu, trang web, ứng dụng di động, sao lưu và khôi phục, lưu trữ, ứng dụng doanh nghiệp, thiết bị IoT và phân tích dữ liệu lớn.\nAmazon CloudFront Amazon CloudFront là một dịch vụ giúp tăng tốc độ phân phối nội dung trang web tĩnh và động chẳng hạn như các tệp HTML, CSS, Javascript và hình ảnh cho người dùng của bạn. CloudFront tăng tốc độ phân phối nội dung bằng cách:\nSử dụng hạ tầng toàn cầu của AWS để phân phối nội dung gần hơn với người dùng, giảm độ trễ Lưu nội dung vào bộ nhớ đệm tại các máy chủ gần người dùng, do đó nội dung này luôn có sẵn mà không cần phải quay lại máy chủ gốc để truy vấn Định tuyến các yêu cầu của người dùng thông qua hạ tầng mạng của AWS để phân phối nội dung nhanh hơn so với đường truyền internet Những điều này giúp cho độ trễ của CloudFront thấp hơn, tốc độ truyền dữ liệu cao hơn và độ tin cậy được cải thiện hơn.\nAmazon Route 53 Amazon Route 53 là dịch vụ hệ thống tên miền (DNS) có tính sẵn sàng và khả năng mở rộng cao. Bạn có thể sử dụng Route 53 để đăng ký tên miền, cấu hình định tuyến DNS và kiểm tra tình trạng của hệ thống. Route 53 có thể tích hợp với rất nhiều dịch vụ khác của AWS giúp cho việc triển khai và cấu hình tên miền ứng dụng web trở nên rất dễ dàng.\nAWS Certificate Manager (ACM) AWS Certificate Manager (ACM) xử lý sự phức tạp của việc tạo, lưu và gia hạn chứng chỉ SSL/TLS X.509 công khai và riêng tư để bảo vệ các trang web và ứng dụng AWS. Chứng chỉ SSL/TLS giúp cho phép máy chủ của ứng dụng web giao tiếp với người dùng thông qua giao thức HTTPS bảo mật hơn so với giao thức HTTP. Một số trình duyệt hiện đại đã cho rằng ứng dụng web không đủ an toàn nếu như máy chủ không hỗ trợ giao thức HTTPS và hiện cảnh báo với người dùng nếu họ truy cập vào một trang web như vậy. Người dùng có thể cung cấp chứng chỉ cho các dịch vụ AWS tích hợp của mình bằng cách cấp chúng trực tiếp với ACM hoặc bằng cách nhập chứng chỉ của bên thứ ba vào hệ thống quản lý ACM. Chứng chỉ ACM có thể bảo mật các tên miền đơn lẻ, nhiều tên miền cụ thể, miền ký tự đại diện hoặc kết hợp các tên miền này. Chứng chỉ ký tự đại diện ACM có thể bảo vệ số lượng tên miền phụ không giới hạn.\n"
+},
+{
+	"uri": "//localhost:1313/vi/6-cloudfront-deployment/6.1-configure-s3-origin/",
+	"title": "Tạo Distribution",
+	"tags": [],
+	"description": "",
+	"content": "Tạo S3 Bucket Truy cập S3: Tìm kiếm từ khoá: s3 Chọn S3 Tại giao diện S3: Chọn Buckets Bấm Create bucket Tại giao diện Create bucket: AWS Region: Asia Pacific (Singapore) ap-southeast-1 Bucket name: Điền tên bucket bạn muốn đặt (VD: fcj-todo-bucket-1) Bấm Create Tạo CloudFront Distribution Truy cập CloudFront: Tìm kiếm từ khoá: cloudfront Chọn CloudFront Tại giao diện CloudFront: Chọn Distribution Bấm Create distribution Tại giao diện Create distribution: Origin domain: Chọn S3 bucket vừa tạo Name: todo-app-frontend Origin access: Origin access control settings (recommended) Bấm Create new OAC Giữ nguyên tất cả cấu hình rồi bấm Create Web Application Firewall: Do not enable security protections Price class: Use North America, Europe, Asia, Middle East, and Africa Default root object: index.html Bấm Create distribution Cập nhật S3 bucket policy: Sau khi tạo xong distribution, bạn sẽ thấy một thông báo màu vàng yêu cầu cập nhật policy của S3 bucket. Bấm nút Copy policy Quay lại S3 bucket rồi chọn tab Permissions Bấm Edit tại phần Bucket policy Dán nội dung policy vừa sao chép vào phần Policy rồi lưu lại "
+},
+{
+	"uri": "//localhost:1313/vi/5-ecs-service-deployment/5.1-setup-ecr/",
+	"title": "Tạo ECR Repository",
+	"tags": [],
+	"description": "",
+	"content": "Tạo ECR Repository Truy cập ECR:\nTìm kiếm với từ khoá: ecr Chọn Elastic Container Registry Tại giao diện Amazon Elastic Container Registry:\nChọn Repositories Bấm Create Registry Tại giao diện Create Registry:\nVisibility settings: Public Registry name: todo Push Docker image to ECR:\nChọn Repositories trong phần Public registry Chọn repository todo rồi bấm View push commands Tại folder simple-todo-app chạy lệnh sau: cd backend Chạy lần lượt các lệnh trên giao diện của ECR. Đảm bảo Docker trên máy tính của bạn đang bật trước khi chạy các lệnh này.\nSau khi chạy xong các lệnh này chúng ta sẽ có một Docker image trên ECR repository như trong ảnh: Kiểm tra Docker image:\nTại giao diện ECR, chọn Repositories dưới phần Public registry rồi chọn todo Bấm nút Copy URI để sao chép địa chỉ của image này. Hãy lưu lại địa chỉ này vì chúng ta sẽ cần dùng đến nó ở các bước tiếp theo. "
+},
+{
+	"uri": "//localhost:1313/vi/7-route53/7.1-setup-hosted-zone/",
+	"title": "Tạo Hosted Zone",
+	"tags": [],
+	"description": "",
+	"content": "Tạo Hosted Zone Truy cập Route 53:\nTìm kiếm từ khoá: route 53 Chọn dịch vụ Route 53 Tại giao diện Route 53:\nChọn Hosted zones Bấm Create hosted zone Tại giao diện Create hosted zone:\nDomain name: Điền domain name của bạn Type: Public hosted zone Bấm Create hosted zone Cấu hình name servers: Để tích hợp domain của bạn với Route 53 thì bạn cần trỏ các DNS record có type NS vào các name server của AWS. Bạn có thể làm điều này bằng cách truy cập và trang quản lý DNS của nhà cung cấp domain của bạn.\nVí dụ về cấu hình: Kiểm tra cấu hình name servers: Việc cấu hình name servers có thể sẽ mất thời gian để cập nhật. Hãy đợi vài phút trước khi thực hiện các bước dưới đây.\nTruy cập vào địa chỉ: DNS Checker Chọn tab: DNS Lookup Tại phần Enter any Valid URL: Nhập địa chỉ domain của bạn (VD: yourdomain.com) Record type: NS Bấm Lookup DNS Kết quả khi bạn cấu hình thành công: "
+},
+{
+	"uri": "//localhost:1313/vi/4-database-deployment/4.1-subnet-group/",
+	"title": "Tạo Subnet Group",
+	"tags": [],
+	"description": "",
+	"content": "Tạo Subnet Group Database subnet group được dùng để nhóm những subnet được chỉ định dành cho database. Khi khởi tạo, database chỉ có thể thuộc trong một trong các subnet của subnet group.\nMột subnet group có các subnet ở ít nhất hai vùng sẵn sàng trong region của subnet group đó. Các subnet trong subnet group có thể là public hoặc private, tùy thuộc vào cấu hình Network ACL và route table của chúng.\nĐể bảo mật, các subnet trong subnet group thường là private subnet. Nếu cơ sở dữ liệu phải có thể truy cập công khai thì tất cả các subnet trong subnet group của nó phải là public subnet.\nTại giao diện AWS Management Console: Search từ khoá RDS Chọn RDS Tại giao diện của Amazon RDS: Chọn Subnet groups Bấm Create DB subnet group Tại giao diện Create DB subnet group: Name: todo-db-subnet-group Description: Subnet group for todo DB VPC: todo-vpc Tại phần Add subnets: Chọn availability zone: ap-southeast-1a và ap-southeast-1b Subnets: private-subnet-az-1 (10.0.1.0/24) và private-subnet-az-2 (10.0.3.0/24) Bấm Create "
+},
+{
+	"uri": "//localhost:1313/vi/3-networking-security/3.1-vpc/",
+	"title": "Tạo VPC",
+	"tags": [],
+	"description": "",
+	"content": "Tạo VPC Tại giao diện của AWS Management Console:\nSearch từ khoá VPC Chọn VPC Tại giao diện của VPC:\nChọn Your VPCs Bấm Create VPC Các thông tin cấu hình:\nResource: VPC only Name tag: todo-vpc IPv4 CIDR: 10.0.0.0/16 Các cấu hình còn lại giữ nguyên mặc định rồi bấm Create VPC Sau khi VPC trở trên khả dụng:\nChọn Actions Bấm Edit VPC settings Check vào ô Enable DNS hostname Bấm Save "
+},
+{
+	"uri": "//localhost:1313/vi/",
+	"title": "Triển khai trang hệ thống có khả năng mở rộng với CloudFront, ECS Fargate",
+	"tags": [],
+	"description": "",
+	"content": "Triển khai trang hệ thống có khả năng mở rộng với CloudFront, ECS Fargate Tổng quan Trong bài lab này, chúng ta sẽ triển khai một ứng dụng web đơn giản lên AWS sử dụng các service như CloudFront, Elastic Container Service (ECS), Amazon RDS, Route53. Website được triển khai theo cách này giúp tăng tính sẵn sàng, và khả năng mở rộng mà không cần phải quản lý máy chủ vật lý nào.\nSơ đồ kiến trúc Nội dung Giới thiệu Chuẩn bị Mạng vào bảo mật Triển khai cơ sở dữ liệu Triển khai ECS Service Triển khai CloudFront Cấu hình Route53 Dọn dẹp tài nguyên "
+},
+{
+	"uri": "//localhost:1313/vi/7-route53/7.2-cname-cloudfront/",
+	"title": "Alternate Domain Name",
+	"tags": [],
+	"description": "",
+	"content": "Để cấu hình được tên miền cho CloudFront distribution thì chúng ta cần phải có một chứng chỉ SSL/TLS gắn với tên miền đó trước. Chúng ta có thể tạo chứng chỉ này bằng dịch vụ Amazon Certificate Manager (ACM).\nCấu hình CloudFront Alternate Domain Name Yêu cầu chứng chỉ SSL/TLS bằng ACM:\nXem chi tiết CloudFront distribution của bạn Tại tab General, bấm Edit Tại giao diện Edit settings:\nCustom SSL certificate: Request certificate Tại giao diện Request certificate\nBấm Next Tại giao diện Request public certificate: Fully qualified domain name: Điền tên miền bạn muốn chọn cho Todo application. VD: todo.yourdomain.com Bấm Request Tạo Route 53 DNS record:\nXem chi tiết chứng chỉ của bạn tại phần List certificates Bấm Create records in Route 53 Bấm Create records Đợi một chút cho đến khi chứng chỉ của bạn có trạng thái là: Issued Cấu hình CloudFront alternate domain name:\nQuay lại giao diện Edit settings của CloudFront distribution Tại phần Custom SSL certificate: Bấm biểu tượng reload Chọn chứng chỉ bạn vừa tạo Tại phần Alternate domain name (CNAME): Bấm Add item Điền tên miền gắn với chứng chỉ của bạn Kéo xuống dưới và bấm Save changes Quay lại giao diện Route 53 hosted zone rồi bấm Create record sau đó cấu hình: Record name: Điền sub domain gắn với chứng chỉ của bạn (VD: todo) Bật Alias Route traffic to: Alias to CloudFront distribution Chọn CloudFront distribution của bạn Bấm Create records Sau khi tạo xong record này, bạn đã cấu hình thành công domain name cho CloudFront distribution. Khi truy cập đến tên miền bạn vừa cấu hình, bạn sẽ thấy giao diện của website Todo như trong ảnh dưới đây: "
+},
+{
+	"uri": "//localhost:1313/vi/2-preparation/",
+	"title": "Chuẩn bị",
+	"tags": [],
+	"description": "",
+	"content": "Chuẩn bị AWS CLI là công cụ giao diện dòng lệnh giúp người dùng tương tác với các dịch vụ của AWS. Trong phần này chúng ta sẽ cùng cài đặt và cấu hình AWS CLI trên máy tính.\nCài đặt AWS CLI Truy cập vào địa chỉ này để cài đặt AWS CLI phù hợp hệ điều hành của bạn: Cài đặt AWS CLI\nCấu hình AWS CLI Tạo AWS access key\nTruy cập vào dịch vụ IAM Chọn Users trong phần sidebar Chọn người dùng hiện tại Chọn tab Security credentials Kéo xuống phần Access keys rồi chọn Create access key Chọn use case là Command Line Interface (CLI) rồi chọn Next Các cấu hình còn lại để mặc định rồi tạo access key. Sau khi tạo xong bạn sẽ nhận được một cặp Access key và Secret access key như dưới đây. Hãy lưu các key này lại hoặc tải file CSV về máy tính của bạn để chuẩn bị cho bước tiếp theo. Cấu hình AWS CLI\nChạy lệnh sau để cấu hình AWS CLI. Phần AWS Access Key ID và AWS Secret Access Key thì điền key mà bạn vừa tạo. Default region thì đặt là ap-southeast-1 (Singapore), Default output format là json\naws configure Bạn có thể kiểm tra xem mình đã cấu hình đúng chưa bằng lệnh sau, nếu không có lỗi gì thì bạn đã cấu hình thành công.\naws s3 ls "
+},
+{
+	"uri": "//localhost:1313/vi/6-cloudfront-deployment/6.2-upload-static-content/",
+	"title": "Nội dung tĩnh",
+	"tags": [],
+	"description": "",
+	"content": "Tải lên nội dung tĩnh Sao chép domain name của CloudFront distribution:\nXem chi tiết CloudFront distribution vừa tạo Chọn tab General Sao chép domain name Build frontend\nMở file simple-todo-app/frontend/.env Thay \u0026lt;distribution_domain_name_https\u0026gt; bằng domain name bạn vừa sao chép (VD: https://d5g9rzkrknce9.cloudfront.net) rồi cập nhật: REACT_APP_API_ENDPOINT=\u0026lt;distribution_domain_name_https\u0026gt;/api Chạy lệnh sau tại folder simple-todo-app/frontend, hãy đảm bảo rằng máy bạn đã cài NodeJS và yarn: yarn yarn build Sau khi chạy lệnh build này thành công bạn sẽ thấy một folder build, hãy mở folder sẵn để chuẩn bị cho bước tiếp theo. Tải lên nội dung tĩnh\nTại giao diện của S3 bucket fcj-todo-bucket-1 bấm Upload Kéo thả toàn bộ file trong folder build vào phần Files and folders Bấm Upload Sau khi upload xong ta sẽ có các file như trong ảnh dưới: "
+},
+{
+	"uri": "//localhost:1313/vi/4-database-deployment/4.2-aurora/",
+	"title": "Tạo Database",
+	"tags": [],
+	"description": "",
+	"content": "Tạo Database Tại giao diện Amazon RDS:\nChọn Databases Bấm Create database Tại giao diện Create database cấu hình như sau:\nCreation method: Standard create Engine options: Aurora (MySQL Compatible) Engine Version: Aurora MySQL 3.04.1 Templates: Dev/Test DB cluster identifier: todo-db Credentials Settings: Master password: Đặt mật khẩu cho database của bạn (VD: password) Instance configuration: DB instance class: Burstable classes (includes t classes) DB type: db.t3.medium Availability \u0026amp; durability: Create an Aurora Replica or Reader node in a different AZ (recommended for scaled availability) Connectivity: VPC: todo-vpc DB subnet group: todo-db-subnet-group Public access: No VPC security group: Chọn Choose existing Chọn todo-db-sg Sau khi cấu hình xong thì bấm Create database.\nKhi tạo cơ sở dữ liệu thành công, giao diện sẽ giống như trong ảnh dưới đây: "
+},
+{
+	"uri": "//localhost:1313/vi/5-ecs-service-deployment/5.2-iam-role/",
+	"title": "Tạo IAM Role",
+	"tags": [],
+	"description": "",
+	"content": "Tạo IAM Role Truy cập IAM: Tìm kiếm với từ khoá iam Chọn service IAM Tại giao diện IAM: Chọn Roles Chọn Create role Tại giao diện Create role: Chọn type AWS service Tìm kiếm với từ khoá elastic Chọn Elastic Container Service Chọn use case Elastic Container Service Task Bấm Next Tại bước 2 (Add permissions) tìm kiếm AmazonRDSDataFullAccess và chọn policy này Bấm Next Tại bước 3: Role name: todo-ecs-task-role Description: Allow RDS access to ECS tasks Bấm Create role "
+},
+{
+	"uri": "//localhost:1313/vi/3-networking-security/3.2-subnets/",
+	"title": "Tạo Subnets",
+	"tags": [],
+	"description": "",
+	"content": "Tạo Subnets Tại giao diện của VPC:\nChọn Subnets Bấm Create subnet Tại giao diện Create subnet:\nChọn todo-vpc VPC Tạo cùng lúc 4 subnets với cấu hình như trong bảng sau: Subnet name Availability zone IPv4 CIDR block public-subnet-az-1 ap-southeast-1a 10.0.0.0/24 private-subnet-az-1 ap-southeast-1a 10.0.1.0/24 public-subnet-az-2 ap-southeast-1b 10.0.2.0/24 private-subnet-az-2 ap-southeast-1b 10.0.3.0/24 Sau khi tạo xong chúng ta sẽ có các subnet như trong hình: Cấu hình tự động cấp phát địa chỉ IPv4 công khai cho 2 public subnets Tại giao diện của VPC: Chọn Subnets Chọn public-subnet-az-1 Chọn Actions Chọn Edit subnet settings Tại phần Auto-assign IP settings: Chọn Enable auto-assign public IPv4 address Bấm Save Làm tương tự với public-subnet-az-2 Kiểm tra xem các public subnets đã cấu hình đúng chưa "
+},
+{
+	"uri": "//localhost:1313/vi/6-cloudfront-deployment/6.3-configure-alb-origin/",
+	"title": "Cấu hình ALB Origin",
+	"tags": [],
+	"description": "",
+	"content": "Cấu hình ALB Origin Tại giao diện CloudFront Distribution: Chọn tab Origin Bấm Create origin Tại giao diện Create origin: Chọn Origin domain: todo-alb Protocol: HTTP Name todo-app-backend Bấm Create origin Tại giao diện CloudFront Distribution: Chọn tab Behaviors Bấm Create behavior Tại giao diện Create behavior: Path pattern: /api/* Origin and origin groups: todo-app-backend Viewer protocol policy: Redirect HTTP to HTTPS Allowed HTTP methods: GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE Cache key and origin requests: Cache policy: CachingDisabled Origin request policy: AllViewer Bấm Create behavior Sau khi tạo thành công thì ta sẽ có các behavior như trong ảnh: Truy cập website bằng CloudFront Domain name: Sao chép địa chỉ domain name của CloudFront distribution (VD: https://d19141wkxl3uap.cloudfront.net) Truy cập tới địa chỉ này trên trình duyệt bạn sẽ thấy giao diện của website như sau: "
+},
+{
+	"uri": "//localhost:1313/vi/4-database-deployment/4.3-configure-database/",
+	"title": "Cấu hình Database",
+	"tags": [],
+	"description": "",
+	"content": "Cấu hình Database Ở bước này, chúng ta sẽ tạo cơ sở dữ liệu và các bảng cần thiết.\nRDS database của chúng ta đã được cấu hình không cho phép truy cập công khai để tăng tính bảo mật nên chỉ có thể truy cập được bằng các tài nguyên trong cùng VPC. Do đó chúng ta sẽ dùng một EC2 instance trong cùng VPC để kết nối đến và truy vấn database. Vì trong source code không có sẵn database migrations cho nên mới cần phải thực hiện bước này thủ công, trên thực tế chúng ta sẽ không phải thực hiện bước này nếu đã có database migrations.\nTại giao diện Amazon RDS: Chọn database todo-db Kéo xuống dưới, chọn tab Connectivity \u0026amp; Security Copy endpoint có type là Writer và lưu lại Truy cập vào dịch vụ EC2: Tìm kiếm từ khoá: ec2 Chọn dịch vụ EC2 Bấm Launch instance Tại giao diện Launch an instance: Amazon Machine Image (AMI): Amazon Linux 2 AMI Tạo Key pair mới: Key pair name: configure-db-key Key pair type: RSA Bấm Create key pair Network settings: VPC: todo-vpc Subnet: public-subnet-az-1 Security group: todo-ecs-sg Chúng ta chọn security group todo-ecs-sg vì database đã được cấu hình sẵn cho phép truy cập từ security group này.\nTại giao diện EC2: Chọn Security Groups Chọn todo-ecs-sg Chọn Actions rồi chọn Edit inbound rules Thêm inbound rule mới với type SSH, source Anywhere-IPv4 Bấm Save rules Tại giao diện EC2: Chọn Instances Chọn EC2 instance vừa tạo Bấm Connect Giữ nguyên các cấu hình mặc định, bấm Connect Cấu hình database: Sau khi kết nối được đến EC2 instance, chạy các lệnh sau:\nsudo su yum update -y yum install mysql -y Thay \u0026lt;todo_db_write_endpoint\u0026gt; bằng endpoint bạn đã copy rồi kết nối đến database bằng lệnh sau:\nmysql -h \u0026lt;todo_db_write_endpoint\u0026gt; -u admin -p Sau khi nhập password, chúng ta sẽ kết nối được đến database. Chạy các lệnh sau để tạo các bảng cần thiết:\nCREATE DATABASE todos; USE todos; CREATE TABLE `todos` ( `id` VARCHAR(40) PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `description` VARCHAR(255) NULL, `status` BOOLEAN NOT NULL DEFAULT 0 ); Nếu như không có lỗi gì xảy ra thì bạn đã cấu hình database thành công.\nDọn dẹp tài nguyên Quay lại giao diện EC2 rồi terminate EC2 instance vừa tạo Chọn Security Groups Chọn todo-ecs-sg Chọn Actions rồi chọn Edit inbound rules Xoá inbound rule có type là SSH Bấm Save rules "
+},
+{
+	"uri": "//localhost:1313/vi/3-networking-security/",
+	"title": "Mạng và bảo mật",
+	"tags": [],
+	"description": "",
+	"content": "Mạng và bảo mật Trong phần này chúng ta sẽ cùng cấu hình các thành phần trong mạng VPC và security groups để tăng tính bảo mật cho các tài nguyên RDS database, ECS service, Elastic Load Balancer.\nNội dung Tạo VPC Tạo Subnets Tạo Internet Gateway Tạo NAT Gateway Tạo Route Tables Tạo Security Groups "
+},
+{
+	"uri": "//localhost:1313/vi/3-networking-security/3.3-internet-gateway/",
+	"title": "Tạo Internet Gateway",
+	"tags": [],
+	"description": "",
+	"content": "Tạo Internet Gateway Tại giao diện của VPC: Chọn Internet gateways Bấm Create internet gateway Tại giao diện Create internet gateway: Đặt tên là todo-igw Bấm Create internet gateway Sau khi tạo xong internet gateway: Chọn Actions Chọn Attach to VPC Chọn todo-vpc Bấm Attach internet gateway Sau khi attach thành công internet gateway vào VPC thì nó sẽ có trạng thái là Attached "
+},
+{
+	"uri": "//localhost:1313/vi/5-ecs-service-deployment/5.3-ecs-task-definition/",
+	"title": "Tạo Task Definition",
+	"tags": [],
+	"description": "",
+	"content": "AWS Fargate là công nghệ mà người dùng có thể sử dụng với Amazon ECS để chạy container mà không cần phải quản lý máy chủ hoặc cluster Amazon EC2. Với AWS Fargate, người dùng không còn phải cung cấp, đặt cấu hình hoặc thay đổi quy mô các cụm máy ảo để chạy container. Điều này loại bỏ nhu cầu chọn loại máy chủ, quyết định thời điểm mở rộng quy mô cụm của người dùng hoặc tối ưu hóa việc đóng gói cụm.\nTạo ECS Cluster Truy cập ECS: Tìm kiếm với từ khoá ecs Chọn service Elastic Container Service Tại giao diện ECS: Chọn Clusters Bấm Create cluster Tại giao diện Create cluster: Cluster name: todo-ecs-cluster Infrastructure: AWS Fargate (serverless) Bấm Create Tạo ECS Task Definition Tại giao diện ECS:\nChọn Task definitions Bấm Create new task definition Chọn Create new task definition Tại giao diện Create new task definition:\nTask definition family: todo-ecs-task-definion Launch type: AWS Fargate Operating system/Architecture: Tuỳ theo kiến trúc Docker image của bạn Bước này bạn cần phải chọn đúng kiến trúc Docker image, nếu không bạn sẽ không thể triển khai ECS service được. Để biết Docker image của bạn có kiến trúc amd hay arm hãy chạy lệnh sau: docker inspect todo:latest | grep Architecture. Nếu kết quả là arm64 thì hãy chọn kiến trúc Linux/ARM64, còn nếu không thì hãy chọn Linux/X86_64\nCPU: .5 vCPU\nMemory: 1GB\nTask role: todo-ecs-task-role\nTask execution role: Create new role Phần Container-1:\nName: todo-app Image URI: ECR image URI Container port: 5500 Port name: todo-server-port Phần Environment variables: Bạn có thể lấy được ARN của một parameter trong Parameter Store, bằng cách xem chi tiết của parameter đó như trong ảnh: Thêm các biến môi trường như trong bảng dưới đây:\nKey Value type Value DB_HOST ValueFrom ARN của parameter /todo/db-host DB_PORT ValueFrom ARN của parameter /todo/db-port DB_USER ValueFrom ARN của parameter /todo/db-user DB_PASS ValueFrom ARN của parameter /todo/db-pass DB_NAME ValueFrom ARN của parameter /todo/db-name Sau khi thêm tất cả các biến thì chúng ta sẽ được như trong ảnh sau: Sau khi cấu hình xong hết thì bấm Create.\nCấu hình IAM policy cho ECS Task Execution Role Tại giao diện ECS Task definitions: Xem thông tin của task definition todo-ecs-task-definition Bấm vào ecsTaskExecutionRole để xem chi tiết role đó Thêm policy cho ECS Task Execution Role Kéo xuống phía dưới rồi chọn Add permissions Chọn Create inline policy Tại giao diện Create policy Chọn JSON Dán đoạn IAM policy sau vào Policy editor, sửa \u0026lt;aws_account_id\u0026gt; thành AWS account ID của bạn (12 chữ số) rồi bấm Next { \u0026#34;Version\u0026#34;: \u0026#34;2012-10-17\u0026#34;, \u0026#34;Statement\u0026#34;: [ { \u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;, \u0026#34;Action\u0026#34;: [ \u0026#34;ssm:GetParameters\u0026#34;, \u0026#34;kms:Decrypt\u0026#34; ], \u0026#34;Resource\u0026#34;: [ \u0026#34;arn:aws:ssm:ap-southeast-1:\u0026lt;aws_account_id\u0026gt;:parameter/*\u0026#34;, \u0026#34;arn:aws:kms:ap-southeast-1:\u0026lt;aws_account_id\u0026gt;:key/*\u0026#34; ] } ] } Policy name: ssm-parameter-store-read-only-region-singapore-policy Bấm Create policy "
+},
+{
+	"uri": "//localhost:1313/vi/4-database-deployment/",
+	"title": "Cơ sở dữ liệu",
+	"tags": [],
+	"description": "",
+	"content": "Cơ sở dữ liệu Trong phần này chúng ta sẽ cùng triển khai cơ sở dữ liệu bằng dịch vụ Amazon RDS đồng thời chuẩn bị một cơ sở dữ liệu và tạo các bảng cần thiết. Ngoài ra chúng ta sẽ lưu các thông tin cấu hình bằng chức năng Parameter Store thay vì lưu trực tiếp trong source code, giúp tăng tính bảo mật của hệ thống và giúp cho việc quản lý, thay đổi cấu hình dễ dàng hơn.\nNội dung Tạo Subnet Group Tạo Database Cấu hình Database Tạo Parameters "
+},
+{
+	"uri": "//localhost:1313/vi/5-ecs-service-deployment/5.4-setup-alb/",
+	"title": "Tạo ALB",
+	"tags": [],
+	"description": "",
+	"content": "Tạo ALB Truy cập EC2: Tìm kiếm với từ khoá: ec2 Chọn EC2 Tạo Target group: Tại giao diện EC2, chọn Target group Bấm Create target group Tại giao diện Create target group: Type: IP address Target group name: todo-ecs-tg Protocol: HTTP Port: 5500 VPC: todo-vpc Bấm Next Tại giao diện Register targets: Bấm Remove Bấm Create target group Tại giao diện EC2: Chọn Load Balancers Bấm Create load balancer Bấm Create ở phần Application Load Balancer Tại giao diện Create load balancer: Load balancer name: todo-alb Scheme: Internet-facing Network mapping: VPC: todo-vpc Mappings: Chọn 2 public subnets public-subnet-az-1 và public-subnet-az-2 Security groups: todo-alb-sg Listeners and routing: Protocol: HTTP Port: 80 Default action: todo-ecs-tg "
+},
+{
+	"uri": "//localhost:1313/vi/3-networking-security/3.4-nat-gateways/",
+	"title": "Tạo NAT Gateways",
+	"tags": [],
+	"description": "",
+	"content": "Tạo NAT Gateways Tại giao diện của VPC: Chọn NAT gateways Bấm Create NAT gateway Tại giao diện Create NAT gateway: Đặt tên là todo-nat-gw-az-1 Chọn subnet public-subnet-az-1 Bấm Allocate Elastic IP Bấm Create NAT gateway Lặp lại các bước trên để tạo thêm một NAT gateway nữa: Đặt tên là todo-nat-gw-az-2 Chọn subnet public-subnet-az-2 Bấm Allocate Elastic IP Bấm Create NAT gateway Sau khi tạo xong chúng ta sẽ có 2 NAT gateway như trong ảnh dưới đây: "
+},
+{
+	"uri": "//localhost:1313/vi/4-database-deployment/4.4-parameter-store/",
+	"title": "Tạo Parameters",
+	"tags": [],
+	"description": "",
+	"content": "Tạo Parameters Truy cập Parameter Store\nTìm kiếm từ khoá: parameter store Chọn Parameter Store Bấm Create parameter Tạo parameter mới:\nName: /todo/db-host Type: SecureString Value: DB writer endpoint mà bạn đã lưu ở bước trước Bấm Create parameter Tạo các parameter còn lại Tạo các parameter dưới đây với Type là SecureString, thay \u0026lt;database_password\u0026gt; bằng mật khẩu database của bạn:\nName Value /todo/db-port 3306 /todo/db-user admin /todo/db-pass \u0026lt;database_password\u0026gt; /todo/db-name todos Sau khi tạo xong, chúng ta sẽ có những parameter như dưới đây: "
+},
+{
+	"uri": "//localhost:1313/vi/5-ecs-service-deployment/",
+	"title": "ECS Service",
+	"tags": [],
+	"description": "",
+	"content": "ECS Service Trong phần này chúng ta sẽ cùng triển khai cơ sở dữ liệu bằng dịch vụ Amazon RDS đồng thời chuẩn bị một cơ sở dữ liệu và tạo các bảng cần thiết. Ngoài ra chúng ta sẽ lưu các thông tin cấu hình bằng chức năng Parameter Store thay vì lưu trực tiếp trong source code, giúp tăng tính bảo mật của hệ thống và giúp cho việc quản lý, thay đổi cấu hình dễ dàng hơn.\nNội dung Tạo ECR Repository Tạo IAM Role Tạo Task Definition Tạo ALB Triển khai ECS Service "
+},
+{
+	"uri": "//localhost:1313/vi/3-networking-security/3.5-route-tables/",
+	"title": "Tạo Route Tables",
+	"tags": [],
+	"description": "",
+	"content": "Tạo Route Tables Tại giao diện của VPC:\nChọn Route tables Bấm Create route table Tại giao diện Create route table:\nĐặt tên là todo-public-rtb Chọn VPC todo-vpc Bấm Create route table Lặp lại các bước trên để tạo thêm 2 route table nữa:\ntodo-private-rtb-1 todo-private-rtb-2 Sau khi tạo xong chúng ta sẽ có 3 route tables như trong ảnh dưới đây: Cấu hình route table và subnet associations Mục đích của bước này là để cấu hình định tuyến cho các tài nguyên nằm trong subnet.\nTại giao diện Route tables:\nChọn todo-public-rtb Chọn Actions Chọn Edit subnet associations Tại giao diện Edit subnet associations:\nChọn các subnet: public-subnet-az-1 và public-subnet-az-2 Bấm Save associations Tại giao diện Route tables:\nChọn todo-public-rtb Chọn Actions Chọn Edit routes Tại giao diện Edit routes:\nBấm Add route Thêm route với thông tin như sau: Destination: 0.0.0.0/0 Target: Internet Gateway \u0026gt; todo-igw Bấm Save changes Lặp lại các bước trên với todo-private-rtb-1 và todo-private-rtb-2, cấu hình như sau:\nRoute table Subnet associations Route todo-private-rtb-1 private-subnet-az-1 0.0.0.0/0: NAT Gateway \u0026gt; todo-nat-gw-az-1 todo-private-rtb-2 private-subnet-az-2 0.0.0.0/0: NAT Gateway \u0026gt; todo-nat-gw-az-2 Cấu hình route cho todo-private-rtb-1 Cấu hình route cho todo-private-rtb-2 Kiểm tra cấu hình\nChúng ta có thể kiểm tra cấu hình route table đã đúng chưa bằng cách xem thông tin của nó "
+},
+{
+	"uri": "//localhost:1313/vi/5-ecs-service-deployment/5.5-deploy-ecs-service/",
+	"title": "Triển khai ECS Service",
+	"tags": [],
+	"description": "",
+	"content": "Triển khai ECS Service Tại giao diện todo-ecs-cluster:\nChọn tab Services Bấm Create Tại giao diện Create service:\nEnvironment: Compute options: Launch type Application type: Service Task definition: Family: todo-ecs-task-definition Service name: todo-ecs-service Service type: Replica Desired tasks: 2 VPC: todo-vpc Subnets: private-subnet-az-1 và private-subnet-az-2 Security group: Use an existing security group Chọn todo-ecs-sg Load balancing: Load balancer type: Application Load Balancer Container: todo-app 5500:5500 Load balancer: Chọn Use an existing security group rồi chọn todo-alb Health check grace period: 10 Listener: Chọn Use an existing listener rồi chọn 80:HTTP Target group: Chọn Use an existing target group rồi chọn todo-ecs-tg Service auto scaling: Chọn Use service auto scaling Minimum number of tasks: 1 Maximum number of tasks: 3 Scaling policy type: Target tracking Policy name: avg-cpu-scaling-policy ECS service metric: ECSServiceAverageCPUUtilization Target value: 70 Các cấu hình khác để mặc định rồi bấm Create. Truy cập ECS service:\nSau khi triển khai xong, ECS service sẽ có trạng thái như trong ảnh dưới đây: Quay lại giao diện Load balancers rồi sao chép DNS name của todo-alb: Truy cập địa chỉ này trên trình duyệt bạn sẽ thấy kết quả như sau:\n{\u0026#34;message\u0026#34;:\u0026#34;Welcome to the Todo API\u0026#34;} "
+},
+{
+	"uri": "//localhost:1313/vi/6-cloudfront-deployment/",
+	"title": "CloudFront",
+	"tags": [],
+	"description": "",
+	"content": "CloudFront Trong phần này chúng ta sẽ cùng triển khai CloudFront để cache lại các nội dung tĩnh của website giúp giảm thời gian tải trang đi đáng kể đồng thời cấu hình Cache behavior để điều hướng request đến đúng target frontend hoặc backend.\nNội dung Tạo Distribution Nội dung tĩnh Cấu hình ALB Origin "
+},
+{
+	"uri": "//localhost:1313/vi/3-networking-security/3.6-security-groups/",
+	"title": "Tạo Security Groups",
+	"tags": [],
+	"description": "",
+	"content": "Tạo Security Groups Tại giao diện VPC: Chọn Security groups Bấm Create security group Tại giao diện Create security group: Security group name: todo-alb-sg Description: Allows HTTP access to ALB VPC: todo-vpc Tại phần cấu hình Inbound rules thêm rule mới như sau rồi bấm Create security group Type: HTTP Source: Anywhere-IPv4 Tạo thêm các security group với cấu hình như sau: Security group name: todo-ecs-sg Description: Allows ALB access to ECS service VPC: todo-vpc Inbound rule: Type: Custom TCP Port: 5500 Source: todo-alb-sg Port number là 5500 mà không phải số khác là bởi vì container backend chạy trên port 5500. Chúng ta sẽ cùng cấu hình nó ở các bước tiếp theo.\nSecurity group name: todo-db-sg Description: Allows RDS access to ECS service VPC: todo-vpc Inbound rule: Type: MySQL/Aurora Source: todo-ecs-sg "
+},
+{
+	"uri": "//localhost:1313/vi/7-route53/",
+	"title": "Route 53 (Optional)",
+	"tags": [],
+	"description": "",
+	"content": "Route 53 Trong phần này chúng ta sẽ cùng cấu hình domain name cho website sử dụng dịch vụ Route 53 thay vì dùng domain mặc định của CloudFront.\nĐể thực hiện bước này bạn cần có sẵn một domain name.\nNội dung Tạo Hosted Zone Alternate Domain Name "
+},
+{
+	"uri": "//localhost:1313/vi/8-cleanup/",
+	"title": "Dọn dẹp tài nguyên",
+	"tags": [],
+	"description": "",
+	"content": "Dọn dẹp tài nguyên RDS: Xoá RDS database (xoá từng instance trước khi xoá database) Xoá database subnet group Parameter Store: Xoá các parameter Route 53: Xoá toàn bộ record của Hosted zone trừ 2 records mặc định Xoá hosted zone CloudFront: Disable CloudFront distribution Xoá CloudFront distribution ACM: Xoá chứng chỉ SSL/TLS tại region us-east-1 S3: Xoá toàn bộ file trong S3 bucket Xoá S3 bucket EC2: Xoá Load balancer Xoá Target group ECR: Xoá ECR repository ECS: Xoá ECS service Xoá ECS cluster Xoá task definition VPC: Xoá NAT gateways Xoá elastic IPs Xoá VPC CloudWatch: Xoá CloudWatch log groups IAM: Xoá roles: todo-ecs-task-role và ecsTaskExecutionRole Xoá IAM access key "
+},
+{
+	"uri": "//localhost:1313/vi/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
