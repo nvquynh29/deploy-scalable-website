@@ -12,7 +12,7 @@ Trong bài lab này, chúng ta sẽ triển khai một ứng dụng web đơn gi
 
 
 #### Sơ đồ kiến trúc
-![Architecture Diagram](../../../images/architecture_diagram.svg)
+![Architecture Diagram](/images/architecture_diagram.svg)
 
 #### Nội dung
 

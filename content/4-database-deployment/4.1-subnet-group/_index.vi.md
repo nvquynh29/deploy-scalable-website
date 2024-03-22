@@ -14,18 +14,18 @@ Một subnet group có các subnet ở ít nhất hai vùng sẵn sàng trong re
 1. Tại giao diện **AWS Management Console**:
     - Search từ khoá **RDS**
     - Chọn **RDS**
-    ![Create Subnet Group](../../../images/4-database-deployment/rds_create_subnet_group_1.png)
+    ![Create Subnet Group](/images/4-database-deployment/rds_create_subnet_group_1.png)
 2. Tại giao diện của **Amazon RDS**:
     - Chọn **Subnet groups**
     - Bấm **Create DB subnet group**
-    ![Create Subnet Group](../../../images/4-database-deployment/rds_create_subnet_group_2.png)
+    ![Create Subnet Group](/images/4-database-deployment/rds_create_subnet_group_2.png)
 3. Tại giao diện **Create DB subnet group**:
     - Name: `todo-db-subnet-group`
     - Description: `Subnet group for todo DB`
     - VPC: **todo-vpc**
 4. Tại phần **Add subnets**:
     - Chọn availability zone: **ap-southeast-1a** và **ap-southeast-1b**
-    ![Create Subnet Group](../../../images/4-database-deployment/rds_create_subnet_group_3.png)
+    ![Create Subnet Group](/images/4-database-deployment/rds_create_subnet_group_3.png)
     - Subnets: **private-subnet-az-1 (10.0.1.0/24)** và **private-subnet-az-2 (10.0.3.0/24)**
-    ![Create Subnet Group](../../../images/4-database-deployment/rds_create_subnet_group_4.png)
+    ![Create Subnet Group](/images/4-database-deployment/rds_create_subnet_group_4.png)
     - Bấm **Create**

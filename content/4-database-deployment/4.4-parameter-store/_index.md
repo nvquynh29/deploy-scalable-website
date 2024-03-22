@@ -9,16 +9,16 @@ pre : "<b>4.4 </b>"
 1. Access Parameter Store
     - Search keyword: `parameter store`
     - Select **Parameter Store**
-    ![Create Parameters](../../../images/4-database-deployment/rds_parameter_store_1.png)
+    ![Create Parameters](/images/4-database-deployment/rds_parameter_store_1.png)
     - Click **Create parameter**
-    ![Create Parameters](../../../images/4-database-deployment/rds_parameter_store_2.png)
+    ![Create Parameters](/images/4-database-deployment/rds_parameter_store_2.png)
 2. Create new parameter:
     - Name: `/todo/db-host`
     - Type: **SecureString**
-    ![Create Parameters](../../../images/4-database-deployment/rds_parameter_store_3.png)
+    ![Create Parameters](/images/4-database-deployment/rds_parameter_store_3.png)
     - Value: DB writer endpoint that you saved in the previous step
     - Click **Create parameter**
-    ![Create Parameters](../../../images/4-database-deployment/rds_parameter_store_4.png)
+    ![Create Parameters](/images/4-database-deployment/rds_parameter_store_4.png)
 
 3. Create the remaining parameters
     Create the following parameters with Type as **SecureString**, replace `<database_password>` with your database password:
@@ -30,4 +30,4 @@ pre : "<b>4.4 </b>"
     | `/todo/db-name`  | `todos`  |
 
     After creation, we will have the following parameters:
-    ![Create Parameters](../../../images/4-database-deployment/rds_parameter_store_5.png)
+    ![Create Parameters](/images/4-database-deployment/rds_parameter_store_5.png)

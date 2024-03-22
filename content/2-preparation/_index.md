@@ -21,13 +21,13 @@ Access this address to install the AWS CLI that is appropriate for your operatin
     - Select current user
     - 
     - Scroll down to the **Access keys** section and select **Create access key**
-    ![IAM create access key](../../images/2-preparation/iam_create_access_key_1.png)
+    ![IAM create access key](/images/2-preparation/iam_create_access_key_1.png)
     - Select the use case as **Command Line Interface (CLI)** and select **Next**
-    ![IAM create access key](../../images/2-preparation/iam_create_access_key_2.png)
+    ![IAM create access key](/images/2-preparation/iam_create_access_key_2.png)
     - Leave the remaining configurations as default and then create an access key.
     After creating, you will receive a pair of **Access key** and **Secret access key** as below.
     Save these keys or download the CSV file to your computer to prepare for the next step.
-    ![IAM create access key](../../images/2-preparation/iam_create_access_key_3.png)
+    ![IAM create access key](/images/2-preparation/iam_create_access_key_3.png)
 
 2. Configure AWS CLI
 

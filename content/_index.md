@@ -12,7 +12,7 @@ chapter : false
 In this lab, we will deploy a simple web application to AWS using services such as CloudFront, Elastic Container Service (ECS), Amazon RDS, Route53. Websites deployed this way increase availability and scalability without having to manage any physical servers.
 
 #### Architecture Diagram
-![Architecture Diagram](../../../images/architecture_diagram.svg)
+![Architecture Diagram](/images/architecture_diagram.svg)
 
 #### Content
 

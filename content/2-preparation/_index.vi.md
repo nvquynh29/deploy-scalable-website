@@ -21,13 +21,13 @@ Truy cập vào địa chỉ này để cài đặt AWS CLI phù hợp hệ đi�
     - Chọn người dùng hiện tại
     - Chọn tab **Security credentials**
     - Kéo xuống phần **Access keys** rồi chọn **Create access key**
-    ![IAM create access key](../../images/2-preparation/iam_create_access_key_1.png)
+    ![IAM create access key](/images/2-preparation/iam_create_access_key_1.png)
     - Chọn use case là **Command Line Interface (CLI)** rồi chọn **Next**
-    ![IAM create access key](../../images/2-preparation/iam_create_access_key_2.png)
+    ![IAM create access key](/images/2-preparation/iam_create_access_key_2.png)
     - Các cấu hình còn lại để mặc định rồi tạo access key.
     Sau khi tạo xong bạn sẽ nhận được một cặp **Access key** và **Secret access key** như dưới đây.
     Hãy lưu các key này lại hoặc tải file CSV về máy tính của bạn để chuẩn bị cho bước tiếp theo.
-    ![IAM create access key](../../images/2-preparation/iam_create_access_key_3.png)
+    ![IAM create access key](/images/2-preparation/iam_create_access_key_3.png)
 
 2. Cấu hình AWS CLI
 

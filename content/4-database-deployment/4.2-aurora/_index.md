@@ -9,33 +9,33 @@ pre : "<b>4.2 </b>"
 1. Within **Amazon RDS** interface:
     - Select **Databases**
     - Click on **Create database**
-    ![Create Database](../../../images/4-database-deployment/rds_create_db_1.png)
+    ![Create Database](/images/4-database-deployment/rds_create_db_1.png)
 2. Within **Create database** interface, configure as below:
     - Creation method: **Standard create**
     - Engine options: **Aurora (MySQL Compatible)**
     - Engine Version: **Aurora MySQL 3.04.1**
     - Templates: **Dev/Test**
-    ![Create Database](../../../images/4-database-deployment/rds_create_db_2.png)
+    ![Create Database](/images/4-database-deployment/rds_create_db_2.png)
     - DB cluster identifier: `todo-db`
     - Credentials Settings:
       - Master password: Đặt mật khẩu cho database của bạn (VD: `password`)
-    ![Create Database](../../../images/4-database-deployment/rds_create_db_3.png)
+    ![Create Database](/images/4-database-deployment/rds_create_db_3.png)
     - Instance configuration:
       - DB instance class: **Burstable classes (includes t classes)**
       - DB type: **db.t3.medium**
     - Availability & durability: **Create an Aurora Replica or Reader node in a different AZ (recommended for scaled availability)**
-    ![Create Database](../../../images/4-database-deployment/rds_create_db_4.png)
+    ![Create Database](/images/4-database-deployment/rds_create_db_4.png)
     - Connectivity:
       - VPC: **todo-vpc**
-      ![Create Database](../../../images/4-database-deployment/rds_create_db_5.png)
+      ![Create Database](/images/4-database-deployment/rds_create_db_5.png)
       - DB subnet group: **todo-db-subnet-group**
       - Public access: **No**
       - VPC security group:
         - Select **Choose existing**
         - Select **todo-db-sg**
-      ![Create Database](../../../images/4-database-deployment/rds_create_db_6.png)
+      ![Create Database](/images/4-database-deployment/rds_create_db_6.png)
   
     After configuring the above parameters, click **Create database**.
 
     When the database is successfully created, the interface will look like the image below:
-    ![Create Database](../../../images/4-database-deployment/rds_create_db_7.png)
+    ![Create Database](/images/4-database-deployment/rds_create_db_7.png)

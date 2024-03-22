@@ -10,7 +10,7 @@ pre : "<b>6.2 </b>"
     - View details of the newly created CloudFront distribution
     - Select **General** tab
     - Copy the domain name
-    ![Upload Static Content](../../../images/6-cloudfront-deployment/cloudfront_static_content_1.png)
+    ![Upload Static Content](/images/6-cloudfront-deployment/cloudfront_static_content_1.png)
 2. Build frontend
     - Open file `simple-todo-app/frontend/.env`
     - Replace `<distribution domain name_https>` with the domain name you just copied (e.g. `https://d5g9rzkrknce9.cloudfront.net`) and update:
@@ -24,12 +24,12 @@ pre : "<b>6.2 </b>"
     ```
 
     After running this build command successfully, you will see a `build` folder, open the folder to prepare for the next step.
-    ![Upload Static Content](../../../images/6-cloudfront-deployment/cloudfront_static_content_2.png)
+    ![Upload Static Content](/images/6-cloudfront-deployment/cloudfront_static_content_2.png)
 3. Upload static content
   - Within S3 bucket **fcj-todo-bucket-1** interface click **Upload**
-  ![Upload Static Content](../../../images/6-cloudfront-deployment/cloudfront_static_content_3.png)
+  ![Upload Static Content](/images/6-cloudfront-deployment/cloudfront_static_content_3.png)
   - Drag and drop all files in the build folder into the **Files and folders** section
   - Click **Upload**
-  ![Upload Static Content](../../../images/6-cloudfront-deployment/cloudfront_static_content_4.png)
+  ![Upload Static Content](/images/6-cloudfront-deployment/cloudfront_static_content_4.png)
   After uploading, we will have files as shown in the image below:
-  ![Upload Static Content](../../../images/6-cloudfront-deployment/cloudfront_static_content_5.png)
+  ![Upload Static Content](/images/6-cloudfront-deployment/cloudfront_static_content_5.png)
