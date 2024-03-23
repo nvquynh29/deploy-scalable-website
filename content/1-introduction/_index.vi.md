@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 1. </b> "
 ---
 
-Trong bài lab này, chúng ta sẽ sử dụng những dịch vụ dưới đây của AWS
+Trong bài lab này, chúng ta sẽ sử dụng những dịch vụ và tình năng dưới đây của AWS
 
 #### Virtual Private Cloud (VPC)
 
@@ -17,7 +17,10 @@ Bên trong VPC tùy chỉnh đó, bạn có toàn quyền kiểm kiểm soát m�
 #### Amazon Relational Database Service (Amazon RDS)
 **Amazon RDS** là dịch vụ cơ sở dữ liệu quan hệ dễ dàng quản lý, được tối ưu hoá để tiết kiệm chi phí. RDS rất đơn giản để thiết lập, vận hành và mở rộng tuỳ theo nhu cầu. RDS tự động hoá các tác vụ quản lý phổ biến chẳng hạn như khởi tạo, cấu hình, sao lưu và vá lỗi. RDS cho phép khách hàng tạo cơ sở dữ liệu mới chỉ trong vài phút và cung cấp tính linh hoạt để tuỳ chỉnh cơ sở dữ liệu đáp ứng với nhu cầu sử dụng. Khách hàng có thể tối ưu hóa hiệu suất với các tính năng như Multi-AZ với hai bản sao dự phòng có thể đọc hoặc đọc và ghi được tối ưu hóa,  đồng thời lựa chọn nhiều tùy chọn giá để quản lý chi phí hiệu quả.
 
-#### Parameter Store
+#### AWS Systems Manager
+
+**AWS Systems Manager** is the operations hub for your AWS applications and resources and a secure end-to-end management solution for hybrid and multicloud environments that enables secure operations at scale.
+
 **Parameter Store** là một chức năng của AWS Systems Manager, cung cấp khả năng lưu trữ phân cấp, an toàn để quản lý configuration data và secrets. Bạn có thể lưu trữ dữ liệu như mật khẩu, địa chỉ cơ sở dữ liệu... dưới dạng văn bản thông thường hoặc dữ liệu được mã hóa. Bạn có thể tham chiếu các tham số này trong scripts, commands, hoặc cấu hình của dịch vụ khác bằng cách sử dụng Amazon Resource Name (ARN) của tham số.
 
 #### Amazon Elastic Container Registry (ECR)

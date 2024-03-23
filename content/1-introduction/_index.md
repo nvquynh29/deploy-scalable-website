@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 1. </b> "
 ---
 
-In this lab, we will use the following AWS services
+In this lab, we will use the following AWS services and features
 
 #### Virtual Private Cloud (VPC)
 **Amazon Virtual Private Cloud (Amazon VPC)** is a **Virtual Private Cloud**—a customized virtual network hosted within the AWS Cloud and isolated from the external world. This concept resembles the design and implementation of a distinct standalone network environment in an on-premise data center, a practice still widely employed across many countries.
@@ -16,7 +16,10 @@ Within this dedicated VPC, users possess comprehensive control over their virtua
 #### Amazon Relational Database Service (Amazon RDS)
 **Amazon RDS** is an easy to manage relational database service optimized for total cost of ownership. It is simple to set up, operate, and scale with demand. Amazon RDS automates the undifferentiated database management tasks, such as provisioning, configuring, backups, and patching. Amazon RDS enables customers to create a new database in minutes, and offers flexibility to customize databases to meet their needs. Customers can optimize performance with features, like Multi-AZ with two readable standbys, Optimized Writes and Reads, and choose from multiple pricing options to effectively manage costs.
 
-#### Parameter Store
+#### AWS Systems Manager
+
+**AWS Systems Manager** là trung tâm vận hành cho các ứng dụng và tài nguyên AWS, đồng thời là giải pháp quản lý toàn diện an toàn cho môi trường kết hợp và nhiều đám mây cho phép vận hành an toàn trên quy mô lớn.
+
 **Parameter Store** is a capability of AWS Systems Manager, provides secure, hierarchical storage for configuration data management and secrets management. You can store data such as passwords, database connection strings,... as plain text or encrypted data. You can reference Systems Manager parameters in your scripts, commands, and configuration by Amazon Resource Name (ARN) of them.
 
 #### Amazon Elastic Container Registry (ECR)
