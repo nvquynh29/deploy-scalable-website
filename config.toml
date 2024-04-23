@@ -24,6 +24,7 @@ home = [ "HTML", "RSS", "JSON"]
 title = "Deploy Scalable Website with CloudFront, ECS Fargate"
 weight = 1
 languageName = "English"
+Permalink="."
 
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-facebook'></i> AWS Study Group - FB Group"
@@ -32,13 +33,13 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj"
 weight = 20
 
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-linkedin'></i> Linkedin"
+name = "<i class='fab fa-linkedin'></i>Author's Linkedin"
 identifier = "Linkedin"
 url = "https://www.linkedin.com/in/nvquynh"
 weight = 20
 
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-github'></i> GitHub"
+name = "<i class='fab fa-github'></i>Author's GitHub"
 identifier = "GitHub"
 url = "https://github.com/nvquynh29"
 weight = 20
@@ -47,6 +48,7 @@ weight = 20
 title = "Triển khai trang web có khả năng mở rộng với CloudFront, ECS Fargate"
 weight = 2
 languageName = "Tiếng Việt"
+Permalink="./vi"
 
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-facebook'></i> AWS Study Group - Nhóm FB"
@@ -55,13 +57,13 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj"
 weight = 20
 
 [[Languages.vi.menu.shortcuts]]
-name = "<i class='fab fa-linkedin'></i> Linkedin"
+name = "<i class='fab fa-linkedin'></i>Author's Linkedin"
 identifier = "Linkedin"
 url = "https://www.linkedin.com/in/nvquynh"
 weight = 20
 
 [[Languages.vi.menu.shortcuts]]
-name = "<i class='fab fa-github'></i> GitHub"
+name = "<i class='fab fa-github'></i>Author's GitHub"
 identifier = "GitHub"
 url = "https://github.com/nvquynh29"
 weight = 20
