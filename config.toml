@@ -33,13 +33,13 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj"
 weight = 20
 
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-linkedin'></i>Author's Linkedin"
+name = "<i class='fab fa-linkedin'></i> Author's Linkedin"
 identifier = "Linkedin"
 url = "https://www.linkedin.com/in/nvquynh"
 weight = 20
 
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-github'></i>Author's GitHub"
+name = "<i class='fab fa-github'></i> Author's GitHub"
 identifier = "GitHub"
 url = "https://github.com/nvquynh29"
 weight = 20
@@ -57,13 +57,13 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj"
 weight = 20
 
 [[Languages.vi.menu.shortcuts]]
-name = "<i class='fab fa-linkedin'></i>Author's Linkedin"
+name = "<i class='fab fa-linkedin'></i> Author's Linkedin"
 identifier = "Linkedin"
 url = "https://www.linkedin.com/in/nvquynh"
 weight = 20
 
 [[Languages.vi.menu.shortcuts]]
-name = "<i class='fab fa-github'></i>Author's GitHub"
+name = "<i class='fab fa-github'></i> Author's GitHub"
 identifier = "GitHub"
 url = "https://github.com/nvquynh29"
 weight = 20

@@ -46,7 +46,7 @@
       {{ if and .Site.IsMultiLingual (not .Site.Params.DisableLanguageSwitchingButton)}}
         <li>
           <a class="padding">
-            <i class="fas fa-language fa-fw"></i>
+            <i class="fas fa-language fa-fw"> </i>
           <div class="select-style">
             <select id="select-language" onchange="location = this.value;">
           {{ $siteLanguages := .Site.Languages}}
@@ -57,9 +57,9 @@
                   {{ if eq $translation.Lang .Lang }}
                     {{ $selected := false }}
                     {{ if eq $pageLang .Lang}}
-                      <option id="{{ $translation.Language }}" value="{{ $.Site.BaseURL }}{{ $translation.Lang }}" selected>{{ .LanguageName }}</option>
+                      <option id="{{ $translation.Language }}" value="{{ .Site.BaseURL }}{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
                     {{ else }}
-                      <option id="{{ $translation.Language }}" value="{{ $.Site.BaseURL }}{{ $translation.Lang }}">{{ .LanguageName }}</option>
+                      <option id="{{ $translation.Language }}" value="{{ .Site.BaseURL }}{{ $translation.Permalink }}">{{ .LanguageName }}</option>
                     {{ end }}
                   {{ end }}
               {{ end }}
