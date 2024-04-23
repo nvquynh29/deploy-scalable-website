@@ -18,7 +18,7 @@ Within this dedicated VPC, users possess comprehensive control over their virtua
 
 #### AWS Systems Manager
 
-**AWS Systems Manager** is the operations hub for your AWS applications and resources and a secure end-to-end management solution for hybrid and multicloud environments that enables secure operations at scale.
+**AWS Systems Manager** là trung tâm vận hành cho các ứng dụng và tài nguyên AWS, đồng thời là giải pháp quản lý toàn diện an toàn cho môi trường kết hợp và nhiều đám mây cho phép vận hành an toàn trên quy mô lớn.
 
 **Parameter Store** is a capability of AWS Systems Manager, provides secure, hierarchical storage for configuration data management and secrets management. You can store data such as passwords, database connection strings,... as plain text or encrypted data. You can reference Systems Manager parameters in your scripts, commands, and configuration by Amazon Resource Name (ARN) of them.
 
